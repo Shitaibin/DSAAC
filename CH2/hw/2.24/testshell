@@ -1,0 +1,18 @@
+#!/bin/bash
+
+echo "Test begin ..."
+
+gcc -std=c99 test.c
+echo "Complie complete ..."
+echo "Result is: "
+echo ""
+./t.sh
+echo ""
+
+echo "Change test reulst:"
+echo ""
+gcc -std=c99 changed.c -o changed
+./t1.sh
+echo ""
+
+echo "Test complete ..."
