@@ -1,0 +1,18 @@
+
+About Implementation
+--------------------
+
+In the text book, the implemetation of linked list stack using a header. So, the top pointer is the header->Next.
+About Files
+----------
+
+- stack.c
+- stack.h
+- TestLinkedStack.c
+- t.sh, shell for compliing and starting up the program
+
+ 
+
+
+
+
