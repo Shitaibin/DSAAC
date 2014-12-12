@@ -1,9 +1,11 @@
-#include <stdio.h>
-#include <stdlib.h>
+#include "basic.h"
+
+//#include <stdio.h>
+//#include <stdlib.h>
 
 #ifndef _STACK_H
 
-#define ElementType char
+//#define ElementType char
 
 struct Node;
 typedef struct Node *PtrToNode;

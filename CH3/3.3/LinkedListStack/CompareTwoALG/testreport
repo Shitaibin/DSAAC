@@ -1,0 +1,28 @@
+The test not like what i expect.
+
+From the result, it can conlcude that doing the same operations, the optimize one cost more time than the basic one. Obviously, the optimize failed. And the problem is how to manage those nodes.
+
+-------------------
+Routine	Ticks
+Basic	17084
+Opt  	17934
+
+-------------------
+Routine	Ticks
+Basic	1660742
+Opt	    1664026
+
+-------------------
+Routine	Ticks
+Basic	16876
+Opt  	18094
+
+
+
+
+
+
+
+
+
+
