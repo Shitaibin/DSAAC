@@ -175,16 +175,3 @@ ElementType Top(Stack S)
 	return 0;
 }
 
-/* Fatal error */
-
-void FatalError(char * Str)
-{
-	printf("Fatal error: %s\n", Str);
-}
-
-/* Error */
-
-void Error(char * Str)
-{
-	printf("Error: %s\n", Str);
-}

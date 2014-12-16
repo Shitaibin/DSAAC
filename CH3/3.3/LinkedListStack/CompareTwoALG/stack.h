@@ -1,11 +1,7 @@
-#include "basic.h"
-
-//#include <stdio.h>
-//#include <stdlib.h>
 
 #ifndef _STACK_H
 
-//#define ElementType char
+#include "basic.h"
 
 struct Node;
 typedef struct Node *PtrToNode;
@@ -22,9 +18,6 @@ ElementType Top(Stack S);
 void Pop(Stack S);
 
 #endif
-
-void FatalError(char * Str);
-void Error(char *Str);
 
 /* Stack implementation is a linked list with a header */
 struct Node
