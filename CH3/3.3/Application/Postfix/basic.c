@@ -1,6 +1,6 @@
 #include "basic.h"
 
-void FatalError(const char *str)
+void FatalError(const char * str)
 {
 	printf("FatalError: %s\n", str);
 }
