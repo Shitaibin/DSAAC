@@ -23,14 +23,21 @@ Stack Create(int MaxElements)
 		Error ("Stack is too small!!!");	// just remind, not exit	
 	Stack S = malloc(sizeof(struct StackRecord));
 	if (S == NULL)
+	{
 		FatalError("Out of space!!!");
+		return NULL;
+	}
 
 	S->Array = malloc(sizeof(ElementType) * MaxElements);
 	if (S->Array == NULL)
+	{
 		FatalError("Out of space!!!");
+		return NULL;
+	}
 	
 	S->Capacity = MaxElements;		
 	MakeEmpty(S);
+
 	return S;
 }
 
