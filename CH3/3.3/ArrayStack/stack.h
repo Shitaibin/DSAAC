@@ -1,7 +1,8 @@
 
-#ifndef _STACK_H
+#ifndef STACK_H_
+#define STACK_H_
 
-#include "basic.h"
+#define ElementType char
 
 struct StackRecord;
 typedef struct StackRecord *Stack;
@@ -16,11 +17,6 @@ ElementType Top(Stack S);
 void Pop(Stack S);
 ElementType TopAndPop(Stack S);
 
-#endif
-
-
-/* Stack implementation is a linked list with a header */
-
 #define EmptyTOS -1
 #define MinStackSize 5
 
@@ -31,4 +27,5 @@ struct StackRecord
 	ElementType *Array;
 };
 
+#endif // STACK_H_
 

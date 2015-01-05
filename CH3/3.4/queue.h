@@ -1,7 +1,11 @@
 
-#ifndef _Queue_H_
+#ifndef _QUEUE_H_
+#define _QUEUE_H_
 
-#include "basic.h"
+#include <stdlib.h>
+
+#define MinQueueSize 5
+#define ElementType char
 
 struct QueueRecord;
 typedef struct QueueRecord *Queue;
@@ -17,10 +21,6 @@ void Dequeue( Queue Q);
 ElementType FrontAndDequeue( Queue Q );
 int Succ(int value, Queue Q);
 
-#endif // _Queue_H_
-
-#define MinQueueSize 5
-
 struct QueueRecord
 {
 	int Capacity;
@@ -29,3 +29,6 @@ struct QueueRecord
 	int Rear;
 	ElementType *Array;
 };
+#endif // _Queue_H_
+
+

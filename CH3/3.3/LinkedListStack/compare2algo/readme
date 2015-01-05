@@ -1,0 +1,88 @@
+
+This Readme file is about illustrate how to compare the two programs and the format of input data.
+
+Format
+------
+
+First, we must define the format of input data, or we can't alter the test program and shell scripts.
+
+The format like this:
+
+```
+L
+... // L elements 
+M
+N
+... // N elements
+O
+P
+... // P elements.
+Q
+... // pairs.
+...
+```
+
+- L,M,N,O,P,Q are integers.
+- L,N,P means the times of Push operation, next line, is L/N/P ElementType elements
+- M,O,Q means the times of Pop operation
+- exactly, there are pairs. Such like, (L,M), (N,O), (P,Q). So, the test data not means only 3 group pairs in one test case. 
+
+So, that's all.
+
+About the output format, i don't want to say it here. u can have a look about the source file. really clear.
+
+How to compare
+--------------
+
+The meaning of optimizing the basic implementation is aiming at reducing the cost of create and delete a node. So, use anoter stack. I suppose u know why use another stack rather than a queue. If u don't know, you should reading something how OS manage memory.
+
+The advantages will be appear when do massive push and pop operations alternatively. So, I set L,...,Q to achive this aim. 
+
+Nothing to say now. Keey clean. 
+
+
+About files
+-----------
+
+- in, input data, created by tt.sh
+- in.in, changing it can alter the test, details see at About in.in 
+- t.sh, to test the basic correct of BasicStack.c
+- result, test result, created by tt.sh
+
+
+About in.in
+-----------
+
+you can change it to alter test.
+data format is:
+```
+L
+M
+..
+..
+0
+```
+
+L & M are a pair of push and pop operation. In one test case, the number of pairs depends on your decision. 
+ATTENTION, every test case use a 0 as the end.  So, below is my test case example.
+
+```
+5
+3
+10
+10
+100
+55
+0
+1000
+900
+1000
+900
+0
+```
+
+In this example, there are two test case. Each test case has and end line with 0. 
+
+
+
+

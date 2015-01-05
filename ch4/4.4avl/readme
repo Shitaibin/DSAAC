@@ -1,0 +1,7 @@
+In the test routine, there is no test about Delete().
+Because, at that time. I have no idea how to implement
+function delete. After finished exercise 4.19, I know the way how
+to choose which rotate should be taked after delete.
+
+exercise 4.20 is to implement delete function. I do it recursively.
+So, the test of function delete, please see exercise 4.20.

@@ -1,4 +1,5 @@
-
+#include <stdio.h>
+#include <stdlib.h>
 #include "queue.h"
 
 
@@ -18,14 +19,14 @@ Queue CreateQueue(int MaxElements)
 	Queue Q = malloc(sizeof(struct QueueRecord));
 	if (Q == NULL)
 	{
-		FatalError("Out of space!");
+		puts("Out of space!");
 		return Q;	
 	}
 
 	Q->Array = malloc(sizeof(ElementType) * MaxElements);
 	if (Q->Array == NULL)
 	{
-		FatalError("Out of space!");
+		puts("Out of space!");
 		return NULL;
 	}
 	
@@ -57,7 +58,7 @@ void DisposeQueue(Queue Q)
 void Enqueue(ElementType X, Queue Q)
 {
 	if (IsFull(Q))
-		Error("Queue is full!");
+		puts("Queue is full!");
 	else
 	{
 		Q->Rear = Succ(Q->Rear, Q);
@@ -69,7 +70,7 @@ void Enqueue(ElementType X, Queue Q)
 void Dequeue(Queue Q)
 {
 	if (IsEmpty(Q))
-		Error("Queue is empty!");
+		puts("Queue is empty!");
 	else
 	{
 		Q->Front = Succ(Q->Front, Q);
@@ -88,7 +89,7 @@ int Succ(int value, Queue Q)
 ElementType Front(Queue Q)
 {
 	if (IsEmpty(Q))
-		Error("Queue is empty!");
+		puts("Queue is empty!");
 	else
 		return Q->Array[Q->Front];
 }
@@ -98,7 +99,7 @@ ElementType FrontAndDequeue(Queue Q)
 	ElementType X;
 
 	if (IsEmpty(Q))
-		Error("Queue is empty!");
+		puts("Queue is empty!");
 	else
 	{
 		X = Q->Array[Q->Front];

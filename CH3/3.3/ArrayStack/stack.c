@@ -1,3 +1,5 @@
+#include <stdio.h>
+#include <stdlib.h>
 #include "stack.h"
 
 
@@ -20,18 +22,18 @@ int IsFull(Stack S)
 Stack Create(int MaxElements)
 {
 	if (MaxElements < MinStackSize)
-		Error ("Stack is too small!!!");	// just remind, not exit	
+		puts ("Stack is too small!!!");	// just remind, not exit	
 	Stack S = malloc(sizeof(struct StackRecord));
 	if (S == NULL)
 	{
-		FatalError("Out of space!!!");
+		puts("Out of space!!!");
 		return NULL;
 	}
 
 	S->Array = malloc(sizeof(ElementType) * MaxElements);
 	if (S->Array == NULL)
 	{
-		FatalError("Out of space!!!");
+		puts("Out of space!!!");
 		return NULL;
 	}
 	
@@ -61,7 +63,7 @@ void MakeEmpty(Stack S)
 void Push(ElementType X, Stack S)
 {
 	if ( IsFull(S))
-		Error("stack is full");
+		puts("stack is full");
 	else
 		S->Array[++S->TopOfStack] = X;	
 }
@@ -70,7 +72,7 @@ void Push(ElementType X, Stack S)
 void Pop(Stack S)
 {
 	if ( IsEmpty(S) )
-		Error("stack is empty");
+		puts("stack is empty");
 	else
 		S->TopOfStack--;	
 }
@@ -81,7 +83,7 @@ ElementType Top(Stack S)
 	if (!IsEmpty(S))
 		return S->Array[S->TopOfStack]; 
 
-	Error("stack is empty");
+	puts("stack is empty");
 	return -1;
 }
 
@@ -91,7 +93,7 @@ ElementType TopAndPop(Stack S)
 	if (!IsEmpty(S))
 		return S->Array[S->TopOfStack--];
 
-	Error("stack is empty");
+	puts("stack is empty");
 	return -1;
 }	
 

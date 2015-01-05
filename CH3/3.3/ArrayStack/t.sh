@@ -38,7 +38,7 @@ function ProduceData()
 function Compile()
 {
 	rm -r arraystack.out
-	gcc ArrayStack.c stack.c basic.c -o arraystack.out -g 
+	gcc ArrayStack.c stack.c -o arraystack.out -g 
 
 	echo "Compile complete ..."
 }

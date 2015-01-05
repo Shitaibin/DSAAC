@@ -38,7 +38,7 @@ function ProduceData()
 function Compile()
 {
 	rm -r arrayqueue.out
-	gcc ArrayQueue.c queue.c basic.c -o arrayqueue.out -g 
+	gcc ArrayQueue.c queue.c -o arrayqueue.out -g 
 
 	echo "Compile complete ..."
 }
@@ -78,7 +78,6 @@ do
 	# start to test
 	echo "Start to test ..."
 	./arrayqueue.out < in >> result
-	
 done < in.in
 
 
