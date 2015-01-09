@@ -1,0 +1,9 @@
+# Algorithm
+
+Using preorder traversal. we traverse the trees at the same time.
+there are two situation in terms of a node.
+situation one: tree1->left equals to tree2->left and tree1->right
+equals to tree2->right.
+situation two: tree1->left equals to tree2->right and tree1->right
+equals to tree2->left.
+If not, FALSE.

@@ -1,0 +1,4 @@
+# Algorithm
+
+Use in order traversal, when go to a new node, fill y, then recursive
+fill left child, then fill x, then recursive right child.

@@ -1,0 +1,4 @@
+the perfectly balance binary tree has its profit. the node is the median of [1, 2^H+1 - 1].
+so, it's easy to build this tree. just recursive malloc new node, and add it to the tree.
+
+every node will created, so the T(N) = O(N). N = 2^H+1 - 1.

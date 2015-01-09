@@ -1,0 +1,10 @@
+/* It use in order traversal, and the thinking of exercise 4.33.
+ * when I filled x and y, it will draw a line here. and then
+ * draw a line with the former point.
+ *
+ * *This function has not been tested*, the key reason is Circle and
+ * DrawLine has not been implemeted.
+ *
+ * T(N) = O(N).
+ */ 
+

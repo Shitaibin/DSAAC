@@ -62,6 +62,7 @@ BSTree Insert(ElementType x, BSTree tr)
 		{
 			tr->elem = x;
 			tr->left = tr->right = NULL;
+			tr->x = tr->y = 0;
 		}
 	}
 	else

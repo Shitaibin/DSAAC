@@ -6,11 +6,11 @@ void PreOrder(BSTree T)
 {
 	if(T == NULL)
 		return ;
-	printf("%d ", T->Element);
-	if(T->Left)
-		PreOrder(T->Left);
-	if(T->Right)
-		PreOrder(T->Right);
+	printf("%d ", T->elem);
+	if(T->left)
+		PreOrder(T->left);
+	if(T->right)
+		PreOrder(T->right);
 }
 
 int main()

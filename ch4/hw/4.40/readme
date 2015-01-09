@@ -1,0 +1,12 @@
+# Nature
+
+The nature of child sibling link is using a binary tree to store a normal
+tree.
+
+# Traversal Algorithm
+
+- The inorder traversal of a binary tree is traverse children first in a
+child sibling link.
+- The preorder traversal of a binary tree is traverse parent first in a 
+child sibling link.
+

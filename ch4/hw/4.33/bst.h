@@ -11,6 +11,8 @@ struct BSTNode
 	ElementType elem;
 	BSTree left;
 	BSTree right;
+	int x;
+	int y;
 };
 
 BSTree MakeEmpty(BSTree tr);
