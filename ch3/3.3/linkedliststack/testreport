@@ -1,0 +1,7 @@
+Using the data in result.
+
+when N>1000,  1.123 < Tikes/N < 1.44. So it's stable.
+
+:wq
+
+

@@ -1,0 +1,29 @@
+
+
+
+/**
+ * Efficient exponentiation
+ *
+ * T(N) = O(log N)
+ */
+
+long long int Pow (const int X, int N)
+{
+	if (N == 0)
+		return 1;
+	else if (N == 1)
+		return X;
+	else if (N % 2 ==  0)
+		return Pow( X*X, N/2);
+	else 
+		return Pow (X*X, N/2) * X;
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,4 @@
+
+This routine is to convert infix expression to postfix expression.
+
+You should be clear what you should do when meet ')', as well as any other characters. such as, you meet '+', and when do until meetting what character.

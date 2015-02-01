@@ -1,0 +1,10 @@
+This is a classic algorithm.
+
+The Problem is compute a majority element in an array.
+majority means that elem appears more than N/2 times.
+
+
+The origin of this algorithm is recursion. But it can
+be done in an iterate way.
+
+

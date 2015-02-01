@@ -1,0 +1,17 @@
+# Alogrithm
+
+It use in order traversal, and the thinking of exercise 4.33.
+when I filled x and y, it will draw a line here. and then
+draw a line with the former point.
+
+# Test
+
+*This function has not been tested*, the key reason is Circle and
+DrawLine has not been implemeted. But 4.33 has been tested be right
+So, the basic thinking of this algorithm is right.
+
+# Time Complexity
+
+T(N) = O(N).
+ 
+

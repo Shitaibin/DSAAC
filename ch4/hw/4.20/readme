@@ -1,0 +1,4 @@
+Just draw some pictures about deleting node. And drawing out what the 
+avl tree becoms after a delete operation. What rotation you should take?
+You should prefer to choose the rotation with little opreations.
+

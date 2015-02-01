@@ -1,0 +1,4 @@
+# Algorithm
+
+Using preorder traversal. If the same, traverse the left at the same time
+, then the right child.

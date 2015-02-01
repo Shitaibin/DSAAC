@@ -1,0 +1,50 @@
+# Algorithm
+
+WTF! doing this exerceise is not easy.
+Because you must deal with threads, many situations.
+
+# Lots Of Things To DO
+
+Now you traversal a tree not depend on whether the left/right child
+is null, but depend on leftthread/rightthread, you should alter other
+functions first. Such as Find, FindMin, and so on. But I'v forgot at
+first. So, Debugging costs lots of time.
+
+## Insert
+
+- Be clear about creating a tree and insert a node to an empty tree.
+- Be clear which threads should be when altered.
+
+## Delete
+
+It costs more time than Insert.
+
+There are some situations, I'm not sure all the situations has been
+listed.
+
+- Delete No Thread
+	+ has two child
+	+ the root node
+- No right child 
+	+ it's the left child
+		* his left child has no left child
+	+ it's the right child
+		* his right child has no right child
+- Has right child
+	+ it's the left child
+		* his left child has no left child
+	+ it's the right child
+		* his right child has no right child
+
+# BUG
+
+IT'S IMPORTENT TO LIMIT THE SCOPE OF A VARIABLE.
+
+At the beginning, I'm not create the function DeleteNodeNoLeftChild,
+the variable subtree, has been define at the beginning of function
+Delete, But in it has been never used when the deleted node has two
+child, and i make `tr = subtree` just before return tr. So, A BIG
+BUG, Fixing it consumes lots of time. And it's not easy to find.
+
+
+ 
