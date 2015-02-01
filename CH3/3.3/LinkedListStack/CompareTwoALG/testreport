@@ -1,0 +1,185 @@
+The test not like what i expect.
+
+From the result, it can conlcude that doing the same operations, the optimize one cost more time than the basic one. Obviously, the optimize failed. And the problem is how to manage those nodes.
+
+-------------------
+Routine	Ticks
+Basic	17084
+Opt  	17934
+
+-------------------
+Routine	Ticks
+Basic	1660742
+Opt	    1664026
+
+-------------------
+Routine	Ticks
+Basic	16876
+Opt  	18094
+
+
+
+Turn
+----
+
+I find the hope.
+
+After I change the buffer size, It' changed. Amazing , HA.
+
+If the stack not beyond the management stack size, and the do push more than pop, the advantange appears. Because it saves the time only by reducing the time of allocing space. pop need more time than free, because it needs to maintain the management stack.
+
+-------------------
+Routine	Ticks
+Basic	156623
+Opt		155272
+
+-------------------
+Routine	Ticks
+Basic	16833
+Opt		20064
+
+-------------------
+Routine	Ticks
+Basic	156374
+Opt		151129
+
+-------------------
+Routine	Ticks
+Basic	16795
+Opt		19088
+
+-------------------
+Routine	Ticks
+Basic	160262
+Opt		158121
+
+-------------------
+Routine	Ticks
+Basic	16599
+Opt		19803
+
+-------------------
+Routine	Ticks
+Basic	156507
+Opt		152709
+
+-------------------
+Routine	Ticks
+Basic	26231
+Opt		26047
+
+
+
+
+
+
+The last turn Test
+------------------
+
+在每个测试案例的第一对操作对中，我都尽量让辅助栈（管理栈）存储了大量的节点。然后进行大量的操作。
+
+- 第一个测试，Push操作略多于Pop操作，并且总操作数量不多，因此节省的时间不多。
+- 第二个测试，Push操作与Pop操作的数量相等，由于测试量大，我们看到了节省的时间远比第一个测试多一些。
+- 第三个测试，Push操作远多于Pop操作，并且大量的操作，节省了更多的时间。
+
+节省时间大致如下：
+
+Test 1: 2220。
+Test 2: 22262。
+Test 3: 250852。
+* 单位为ticks。
+ 
+一下为in.in数据
+
+```
+100000
+90000
+90000
+81000
+10000
+10050
+0
+1000000
+1000000
+50000
+50000
+900000
+900000
+0
+1000000
+1000000
+100000
+90000
+100000
+90000
+100000
+90000
+100000
+90000
+900000
+800000
+900000
+900000
+800000
+900000
+1000000
+1000000
+100000
+90000
+100000
+90000
+100000
+90000
+100000
+90000
+900000
+800000
+900000
+900000
+800000
+900000
+1000000
+1000000
+100000
+90000
+100000
+90000
+100000
+90000
+100000
+90000
+900000
+800000
+900000
+900000
+800000
+900000
+0
+```
+
+以下为测试结果
+
+```
+-------------------
+Routine	Ticks
+Basic	26554
+Opt		24334
+
+-------------------
+Routine	Ticks
+Basic	266873
+Opt		244611
+
+-------------------
+Routine	Ticks
+Basic	1569736
+Opt		1318911
+```
+
+
+Summary
+--------
+
+We obviously, the optimize one will show it's advantages only when there is  massive operations and enough buffer space. In this situation, it will save some time even the number of push operations equals to the number of pop operations.
+
+

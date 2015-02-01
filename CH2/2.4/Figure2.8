@@ -1,0 +1,29 @@
+
+/**
+ * using liner algorithm to get the maximum
+ * subsequence sum of a list.
+ */
+
+int MaxSubsequenceSum ( const int A[], int N)
+{
+	int MaxSum, i, CurSum;
+
+	MaxSum = 0; 
+	CurSum = 0;
+	for (i =0; i < N; i++)
+	{
+		CurSum += A[i];
+
+		if (CurSum < 0)
+			CurSum = 0;
+		else if (CurSum > MaxSum)
+			MaxSum = CurSum;
+	}
+
+	return MaxSum;
+
+}
+
+
+
+

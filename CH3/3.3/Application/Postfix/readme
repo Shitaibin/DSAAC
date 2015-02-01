@@ -1,0 +1,17 @@
+This application is evalucating postfix expressions.
+
+Preface
+-------
+
+I write a simple one, which is only can handle simple post expressions, like `1 2 + 3 *`, Every number is only one digit.
+I also write a advanced one, which can handle complicated post expressions, like `12 5 3 * +`. Every number may be not only has one digit. 
+
+Files
+-----
+
+- Postfix.c, simple one
+- t.sh, script for simple one
+- PostfixAdvanced.c, advanced one
+- tt.sh, script for advanced one
+
+

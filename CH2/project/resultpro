@@ -1,0 +1,12 @@
+test size 	 MaxSum 	 clicks
+1000 		 40 		 13
+test size 	 MaxSum 	 clicks
+10000 		 43 		 74
+test size 	 MaxSum 	 clicks
+100000 		 54 		 705
+test size 	 MaxSum 	 clicks
+1000000 		 114 		 7107
+test size 	 MaxSum 	 clicks
+10000000 		 96 		 71090
+test size 	 MaxSum 	 clicks
+100000000 		 124 		 711127
